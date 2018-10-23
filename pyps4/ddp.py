@@ -120,7 +120,7 @@ def search(host=None, broadcast=True):
 
 def get_status(host):
     """Get status."""
-    for ps_list in search(host=host):
+    for ps_list in search(host=host, broadcast=False):
         return ps_list
     return {}
 
